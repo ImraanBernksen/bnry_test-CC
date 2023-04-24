@@ -8,7 +8,7 @@ const newsArticles = '5f1441b653004bdb8851bb7444905c8b';
 
 const app = express();
 
-app.get('/articleNews', (req, res) => {
+app.get('/', (req, res) => {
   const url = `https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=${newsArticles}`;
   axios.get(url)
     .then(response => {
