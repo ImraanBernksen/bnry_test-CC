@@ -4,9 +4,9 @@ const axios = require('axios');
 
 const port = process.env.PORT || 3030;
 
-const app = express();
-
 const newsArticles = '5f1441b653004bdb8851bb7444905c8b';
+
+const app = express();
 
 app.get('/articleNews', (req, res) => {
   const url = `https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=${newsArticles}`;
