@@ -1,7 +1,6 @@
 <template>
-    <div id="signup">
-        <h2 style="color: aqua;">SUBSCRIBE</h2>
-        <p class="pb-4" style="font-size: 20px;">for more content and stay tuned</p>
+<div id="signup">
+      <h2 style="color: aqua;">SUBSCRIBE</h2>
         <form action="https://formspree.io/f/xwkzrbbv" method="POST" style="width: 85%; margin:auto;">
               <div class="form-outline mb-5">
                 <label class="form-label" for="form3Example1">First name</label>
@@ -15,9 +14,9 @@
                 <label class="form-label" for="form3Example3">Email address</label>
                 <input type="email" placeholder="@gmail.com" class="form-control" required />
               </div>
-          <button type="submit" class="btn btn-outline-light btn-block mb-5">Subscribe</button>
+          <button type="submit" class="btn btn-outline-light btn-block mb-4">Subscribe</button>
           <div class="text-center">
-            <p>Skip, Proceed to<a href="/" style="color: aqua;"> Main Page</a></p>
+            <p style="font-size: 20px;">for more content and stay tuned</p>
           </div>
         </form>
 </div>
@@ -29,6 +28,12 @@ export default {
 </script>
 <style scoped>
 #signup {
-    height: 90vh;
+  height: 90vh;
+  width: 85%;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 </style>
