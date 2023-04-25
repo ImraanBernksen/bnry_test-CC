@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import axios from 'axios';
-const newsAPI = "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=5f1441b653004bdb8851bb7444905c8b"
+const newsAPI = "https://bnry-backend-2r47.onrender.com"
 export default createStore({
   state: {
     articles: null,
